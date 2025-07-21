@@ -3,6 +3,7 @@ import {FlatList, Pressable, View, Text, Image, TouchableOpacity, ScrollView} fr
 import {images, offers} from "@/constants";
 import {Fragment} from "react";
 import cn from 'clsx'
+import CartButton from "@/components/CartButton";
 
 export default function Index() {
   return (
@@ -51,7 +52,7 @@ export default function Index() {
                             <Image source={images.arrowDown} className="size-3" resizeMode="contain"/>
                         </TouchableOpacity>
                     </View>
-                    <Text>Cart</Text>
+                    <CartButton />
                 </View>
             )}
          />
